@@ -19,6 +19,6 @@ var Employees = {
         {first: 'Don', last: 'Geiss', title: 'CEO', dept: 'Executive', pic: 'http://ia.media-imdb.com/images/M/MV5BMTQ1ODc3MTE5MF5BMl5BanBnXkFtZTcwMTU0NTU2MQ@@._V1_SX100_CR0,0,100,100_.jpg'},
         {first: 'Devon', last: 'Banks', title: 'Vice President', dept: 'West Coast Media', pic: 'http://ia.media-imdb.com/images/M/MV5BMjE1NTIyMDk3OF5BMl5BanBnXkFtZTcwMzczNjEwMg@@._V1_SY100_CR25,0,100,100_.jpg'},
         {first: 'Hazel', last: 'Wassername', title: 'Page', dept: 'Pages', pic: 'http://ia.media-imdb.com/images/M/MV5BMzA4ODI1MDMxOF5BMl5BanBnXkFtZTcwNDA4MDUzNw@@._V1_SY100_CR25,0,100,100_.jpg'},
-        {first: 'Greta', last: 'Johansen', title: 'Cat Wrangler', dept: 'Stunts', pic: null}
+        {first: 'Greta', last: 'Johansen', title: 'Cat Wrangler', dept: 'Stunts', pic: 'http://ia.media-imdb.com/images/M/MV5BMTg5OTQ0MjI4Nl5BMl5BanBnXkFtZTcwNTk5MDYyMg@@._V1_SX100_CR0,0,100,100_.jpg'}
     ]
 };
