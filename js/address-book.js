@@ -1,7 +1,45 @@
 /* address-book.js
     this is where you will add your JavaScript to complete Lab 5
 */
+$(function() {
 
+    sortObjArray(Employees.entries, 'last');
+    render(Employees.entries);
+
+    $('.sort-ui .btn').click(function() {
+        var sortBtn = $(this);
+        sortObjArray(Employees.entries, sortBtn.attr('data-sortby'));
+        render(Employees.entries);
+        sortBtn.siblings().removeClass("active");
+        sortBtn.addClass("active");
+    });
+
+});
+
+
+function render(entries) {
+    var instance;
+    var template = $('.template');
+    var container = $('.address-book');
+    container.hide();
+    container.empty();
+    $.each(entries, function() {
+        instance = template.clone();
+        instance.find('.first').html(this.first);
+        instance.find('.last').html(this.last);
+        instance.find('.title').html(this.title);
+        instance.find('.dept').html(this.dept);
+        instance.find('.pic').attr({
+            src: this.pic,
+            alt: 'Picture of ' + this.first
+        });
+
+        instance.removeClass('template');
+        container.append(instance);
+
+    });
+    container.fadeIn(500);
+}
 
 /* sortObjArray()
     sorts an array of objects by a given property name
@@ -33,4 +71,3 @@ function sortObjArray(objArray, propName) {
             return 1;
     });
 } //sortObjArray()
-
